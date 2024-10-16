@@ -28,84 +28,153 @@ const Task = () => {
       
         switch (true) {
           case window.innerHeight < 400:
-            styles.width = "148px";
+            styles.width = "152px";
            // styles.borderRadius = "62px";
             break;
-          case window.innerHeight < 410:
-            styles.width = "150px";
-           // styles.borderRadius = "62px";
+          // case window.innerHeight < 410:
+          //   styles.width = "150px";
+          //  // styles.borderRadius = "62px";
+          //   break;
+          case window.innerHeight < 420:
+            styles.width = "160px";
+           styles.borderRadius = "21px";
             break;
           case window.innerHeight < 440:
-            styles.width = "158px";
-           // styles.borderRadius = "62px";
+            styles.width = "168px";
+           styles.borderRadius = "21px";
             break;
           case window.innerHeight < 460:
-            styles.width = "167px";
-           // styles.borderRadius = "62px";
+            styles.width = "177px";
+           styles.borderRadius = "21px";
             break;
           case window.innerHeight <= 479:
-            styles.width = "175px";
-           // styles.borderRadius = "62px";
+            styles.width = "184px";
+           styles.borderRadius = "21px";
+            break;
+          case window.innerHeight <= 497:
+            styles.width = "190px";
+           styles.borderRadius = "23px";
             break;
           case window.innerHeight <= 510:
-            styles.width = "186px";
+            styles.width = "200px";
            // styles.borderRadius = "62px";
             break;
-          case window.innerHeight <= 556:
-            styles.width = "206px";
+          case window.innerHeight <= 530:
+            styles.width = "209px";
+           styles.borderRadius = "29px";
+            break;
+            case window.innerHeight <= 556:
+              styles.width = "215px";
+              // styles.borderRadius = "62px";
+              break;
+              case window.innerHeight <= 579:
+                styles.width = "227px";
+               // styles.borderRadius = "62px";
+                break;
+          case window.innerHeight <= 590:
+            styles.width = "230px";
            // styles.borderRadius = "62px";
             break;
           case window.innerHeight <= 605:
             styles.width = "237px";
            // styles.borderRadius = "62px";
             break;
+          case window.innerHeight <= 615:
+            styles.width = "242px";
+           // styles.borderRadius = "62px";
+            break;
+          case window.innerHeight <= 638:
+            styles.width = "251px";
+           // styles.borderRadius = "62px";
+            break;
           case window.innerHeight <= 658:
             styles.width = "255px";
            // styles.borderRadius = "62px";
             break;
+          case window.innerHeight <= 664:
+            styles.width = "270px";
+           // styles.borderRadius = "62px";
+            break;
+          case window.innerHeight <= 684:
+            styles.width = "268px";
+           // styles.borderRadius = "62px";
+            break;
+          case window.innerHeight <= 698:
+            styles.width = "275px";
+           // styles.borderRadius = "62px";
+            break;
+
           case window.innerHeight <= 705:
-            styles.width = "265px";
+            styles.width = "278px";
+           // styles.borderRadius = "62px";
+            break;
+          case window.innerHeight <= 724:
+            styles.width = "279px";
            // styles.borderRadius = "62px";
             break;
           case window.innerHeight <= 750:
-            styles.width = "287px";
+            styles.width = "290px";
+           // styles.borderRadius = "62px";
+            break;
+          case window.innerHeight <= 775:
+            styles.width = "298px";
            // styles.borderRadius = "62px";
             break;
           case window.innerHeight <= 785:
-            styles.width = "295px";
+            styles.width = "302px";
            // styles.borderRadius = "47px";
             break;
           case window.innerHeight < 800:
-            styles.width = "297px";
+            styles.width = "312px";
+           // styles.borderRadius = "44px";
+            break;
+          case window.innerHeight < 811:
+            styles.width = "315px";
            // styles.borderRadius = "44px";
             break;
           case window.innerHeight < 828:
-            styles.width = "311px";
+            styles.width = "322px";
+           // styles.borderRadius = "47px";
+            break;
+          case window.innerHeight < 850:
+            styles.width = "332px";
            // styles.borderRadius = "47px";
             break;
           case window.innerHeight < 875:
-            styles.width = "330px";
+            styles.width = "338px";
            // styles.borderRadius = "47px";
             break;
           case window.innerHeight < 907:
-            styles.width = "354px";
+            styles.width = "350px";
            // styles.borderRadius = "62px";
+            break;
+          case window.innerHeight < 947:
+            styles.width = "368px";
+           styles.borderRadius = "44px";
             break;
           case window.innerHeight < 966:
             styles.width = "363px";
            // styles.borderRadius = "49px";
             break;
+          case window.innerHeight < 990:
+            styles.width = "386px";
+           // styles.borderRadius = "49px";
+            break;
           case window.innerHeight < 1015:
-            styles.width = "384px";
+            styles.width = "402px";
+           // styles.borderRadius = "62px";
+            break;
+          case window.innerHeight < 1030:
+            styles.width = "398px";
            // styles.borderRadius = "62px";
             break;
           case window.innerHeight < 1050:
-            styles.width = "398px";
+            styles.width = "408px";
            // styles.borderRadius = "68px";
             break;
           case window.innerHeight < 1085:
-            styles.width = "400px";
-           // styles.borderRadius = "61px";
+            styles.width = "445px";
+           styles.borderRadius = "51px";
             break;
           default:
             styles.width = "427px";

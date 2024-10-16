@@ -6,9 +6,9 @@
 
 .back{
   background-image: url(/public/bg1.jpeg);
-  width: 15.5%;
+  width: 89.5%;
   height: 83vh;
-  border-radius: 38px;
+  border-radius: 147px;
   z-index: 20;
   position: absolute;
   top: 46.5%;
@@ -65,7 +65,7 @@
 }
 @media (max-height: 1030px) {
   .back {
-    width: 399px;
+    width: 407px;
     height: 83vh;
     border-radius: 49px;
   }
@@ -86,63 +86,70 @@
 }
 @media (max-height: 930px) {
   .back {
-    width: 360px;
+    width: 365px;
     height: 83vh;
     border-radius: 49px;
   }
 }
 @media (max-height: 907px) {
   .back {
-    width: 347px;
+    width: 358px;
     height: 83vh;
     border-radius: 49px;
   }
 }
 @media (max-height: 875px) {
   .back {
-    width: 330px;
+    width: 343px;
+    height: 83vh;
+    border-radius: 49px;
+  }
+}
+@media (max-height: 849px) {
+  .back {
+    width: 337px;
     height: 83vh;
     border-radius: 49px;
   }
 }
 @media (max-height: 828px) {
   .back {
-    width: 320px;
+    width: 328px;
     height: 83vh;
     border-radius: 49px;
   }
 }
 @media (max-height: 800px) {
   .back {
-    width: 314px;
+    width: 318px;
     height: 83vh;
     border-radius: 49px;
   }
 }
 @media (max-height: 785px) {
   .back {
-    width: 303px;
+    width: 310px;
     height: 83vh;
     border-radius: 49px;
   }
 }
 @media (max-height: 750px) {
   .back {
-    width: 287px;
+    width: 296px;
     height: 83vh;
     border-radius: 49px;
   }
 }
 @media (max-height: 720px) {
   .back {
-    width: 280px;
+    width: 285px;
     height: 83vh;
     border-radius: 49px;
   }
 }
 @media (max-height: 705px) {
   .back {
-    width: 274px;
+    width: 280px;
     height: 83vh;
     border-radius: 40px;
   }
@@ -156,14 +163,14 @@
 }
 @media (max-height: 658px) {
   .back {
-    width: 258px;
+    width: 260px;
     height: 83vh;
     border-radius: 39px;
   }
 }
 @media (max-height: 638px) {
   .back {
-    width: 245px;
+    width: 253px;
     height: 83vh;
     border-radius: 39px;
   }
@@ -177,14 +184,14 @@
 }
 @media (max-height: 585px) {
   .back {
-    width: 225px;
+    width: 232px;
     height: 83vh;
     border-radius: 32px;
   }
 }
 @media (max-height: 556px) {
   .back {
-    width: 212px;
+    width: 222px;
     height: 83vh;
     border-radius: 32px;
   }
@@ -205,21 +212,21 @@
 }
 @media (max-height: 479px) {
   .back {
-    width: 185px;
+    width: 190px;
     height: 83vh;
     border-radius: 29px;
   }
 }
 @media (max-height: 460px) {
   .back {
-    width: 170px;
+    width: 182px;
     height: 83vh;
     border-radius: 29px;
   }
 }
 @media (max-height: 440px) {
   .back {
-    width: 164px;
+    width: 170px;
     height: 83vh;
     border-radius: 29px;
   }
@@ -233,7 +240,7 @@
 }
 @media (max-height: 400px) {
   .back {
-    width: 150px;
+    width: 157px;
     height: 83vh;
     border-radius: 33px;
   }
@@ -287,10 +294,10 @@ align-items: center;
 } */
 
 
-
+/* 
 @font-face {
   font-family: 'CustomFont';
   src: url('/SFPRODISPLAYREGULAR.OTF') format('opentype');
   font-weight: normal;
   font-style: normal;
-}
+} */
