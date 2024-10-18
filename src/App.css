@@ -135,7 +135,7 @@
 }
 @media (max-height: 750px) {
   .back {
-    width: 296px;
+    width: 292px;
     height: 83vh;
     border-radius: 49px;
   }
@@ -156,7 +156,7 @@
 }
 @media (max-height: 685px) {
   .back {
-    width: 266px;
+    width: 283px;
     height: 83vh;
     border-radius: 40px;
   }
@@ -170,14 +170,14 @@
 }
 @media (max-height: 638px) {
   .back {
-    width: 253px;
+    width: 250px;
     height: 83vh;
     border-radius: 39px;
   }
 }
 @media (max-height: 605px) {
   .back {
-    width: 240px;
+    width: 243px;
     height: 83vh;
     border-radius: 32px;
   }

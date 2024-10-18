@@ -20,7 +20,7 @@ const Task = () => {
           position: "absolute",
           zIndex: 10,
           borderRadius: "38px",
-          height: "81.5vh",
+          height: "82.5vh",
           top: "46.5%",
           left: "50%",
           transform: "translate(-50%, -50%)",
@@ -92,7 +92,7 @@ const Task = () => {
            // styles.borderRadius = "62px";
             break;
           case window.innerHeight <= 664:
-            styles.width = "270px";
+            styles.width = "283px";
            // styles.borderRadius = "62px";
             break;
           case window.innerHeight <= 684:
