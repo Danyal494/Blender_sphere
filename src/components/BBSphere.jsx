@@ -23,19 +23,19 @@ export function BBSphere(props) {
     useFrame(() => {
       const ls = 0.05
       if (MailRef.current) {
-        const targetScale = mailClicked ?  new THREE.Vector3(-0.096, -0.096, -0.096) : new THREE.Vector3(-0.076,-0.076,-0.076);
+        const targetScale = mailClicked ? new THREE.Vector3(-0.076, -0.076, -0.076) : new THREE.Vector3(-0.056,-0.056,-0.056);
         MailRef.current.scale.lerp(targetScale, ls);
       }
       if (InstaRef.current) {
-        const targetScale = instaClicked ?  new THREE.Vector3(-0.096, -0.096, -0.096) : new THREE.Vector3(-0.076,-0.076,-0.076);
+        const targetScale = instaClicked ? new THREE.Vector3(-0.076, -0.076, -0.076) : new THREE.Vector3(-0.056,-0.056,-0.056);
         InstaRef.current.scale.lerp(targetScale, ls);
       }
       if (SafariRef.current) {
-        const targetScale = safariClicked ? new THREE.Vector3(-0.084, -0.084, -0.084) : new THREE.Vector3(-0.076,-0.076,-0.076);
+        const targetScale = safariClicked ? new THREE.Vector3(-0.076, -0.076, -0.076) : new THREE.Vector3(-0.056,-0.056,-0.056);
         SafariRef.current.scale.lerp(targetScale,ls);
       }
       if (PhotoRef.current) {
-        const targetScale = photoClicked ? new THREE.Vector3(-0.096, -0.096, -0.096) : new THREE.Vector3(-0.076,-0.076,-0.076);
+        const targetScale = photoClicked ? new THREE.Vector3(-0.076, -0.076, -0.076) : new THREE.Vector3(-0.056,-0.056,-0.056);
         PhotoRef.current.scale.lerp(targetScale, ls);
       }
     });

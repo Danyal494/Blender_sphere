@@ -215,7 +215,7 @@ const Task = () => {
 
 <Canvas  style={responsiveStyles}
         camera={{ position: [0, 0, 10], fov: 3 }}>
-        <Environment preset="city" background={false} /> 
+        <Environment preset="apartment"  background={false} /> 
            <color attach="background" args={["lightblue"]} />
           {/* <Bsphere/> */}
            {/* <ambientLight intensity={0.9}/> */}
