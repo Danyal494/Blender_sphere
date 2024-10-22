@@ -294,10 +294,11 @@ align-items: center;
 } */
 
 
-/* 
+
 @font-face {
   font-family: 'CustomFont';
   src: url('/SFPRODISPLAYREGULAR.OTF') format('opentype');
   font-weight: normal;
   font-style: normal;
-} */
+}
+

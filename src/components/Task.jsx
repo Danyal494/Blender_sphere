@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 
 import { Environment, OrbitControls } from '@react-three/drei';
 import Loader from './Loading';
-import { Bsphere } from './Bsphere';
+
+import { BBSphere } from './BBSphere';
 
 const Task = () => {
   const [loading, setLoading] = useState(true);
@@ -208,19 +209,23 @@ const Task = () => {
       }, []);
       
   return (
-    <div>{
-      loading ? (<Loader/>) : (  <Canvas  style={responsiveStyles}
+    <div>
+      {
+      loading ? (<Loader/>) : (   
+
+<Canvas  style={responsiveStyles}
         camera={{ position: [0, 0, 10], fov: 3 }}>
         <Environment preset="city" background={false} /> 
            <color attach="background" args={["lightblue"]} />
-          <Bsphere/>
+          {/* <Bsphere/> */}
+           <ambientLight intensity={0.9}/>
+          <BBSphere/>
            <OrbitControls 
            minDistance={19} maxDistance={28} 
            zoomSpeed={0.1}
            />
-        </Canvas>)}
-
- 
+        </Canvas>)
+        }
       </div>
   )
 }
