@@ -218,7 +218,7 @@ const Task = () => {
         <Environment preset="city" background={false} /> 
            <color attach="background" args={["lightblue"]} />
           {/* <Bsphere/> */}
-           <ambientLight intensity={0.9}/>
+           {/* <ambientLight intensity={0.9}/> */}
           <BBSphere/>
            <OrbitControls 
            minDistance={19} maxDistance={28} 
