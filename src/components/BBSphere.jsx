@@ -6,7 +6,7 @@ import * as THREE from 'three';
 
 
 export function BBSphere(props) {
-  const { nodes, materials } = useGLTF('/sphere.glb')
+  const { nodes, materials } = useGLTF('/ggg.glb')
     // Create refs for each mesh
     const MailRef = useRef();
     const InstaRef = useRef();
@@ -101,8 +101,24 @@ export function BBSphere(props) {
         onClick={() => setPhotoClicked(!photoClicked)}
 
       />
+         <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane.geometry}
+        material={materials['Material.002']}
+        position={[0, 0.977, 0]}
+        scale={0.101}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane001.geometry}
+        material={materials['Material.003']}
+        position={[0, -0.984, 0]}
+        scale={0.095}
+      />
     </group>
   )
 }
 
-useGLTF.preload('/sphere.glb')
+useGLTF.preload('/ggg.glb')
