@@ -1,10 +1,11 @@
 import { Canvas } from '@react-three/fiber'
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 
 import { Environment, OrbitControls } from '@react-three/drei';
-import Loader from './Loading';
 
-import { BBSphere } from './BBSphere';
+
+import { Sphere } from './ssSphere';
+import Loader from './Loading';
 
 const Task = () => {
   const [loading, setLoading] = useState(true);
@@ -211,21 +212,26 @@ const Task = () => {
   return (
     <div>
       {
-      loading ? (<Loader/>) : (   
+        loading ? (<Loader/>) : (
+          <Suspense fallback={<Loader/>}>
 
-<Canvas  style={responsiveStyles}
-        camera={{ position: [0, 0, 10], fov: 3 }}>
-        <Environment preset="apartment"  background={false} /> 
-           <color attach="background" args={["lightblue"]} />
-          {/* <Bsphere/> */}
-           {/* <ambientLight intensity={0.9}/> */}
-          <BBSphere/>
-           <OrbitControls 
-           minDistance={19} maxDistance={28} 
-           zoomSpeed={0.1}
-           />
-        </Canvas>)
-        }
+          <Canvas  style={responsiveStyles}
+                  camera={{ position: [0, 0, 10], fov: 4 }}>
+                  <Environment preset="sunset"  background={false} /> 
+                     <color attach="background" args={["lightblue"]} />
+                    {/* <Bsphere/> */}
+                     {/* <ambientLight intensity={0.9}/> */}
+          <Sphere/>
+                     <OrbitControls 
+                     minDistance={10} maxDistance={14} 
+                     zoomSpeed={0.1}
+                     />
+                  </Canvas>
+                     </Suspense>
+        )
+      }
+ 
+        
       </div>
   )
 }
