@@ -120,14 +120,14 @@ export function Sphere(props) {
         scale={0.043}
         onClick={() => setSafariClicked(!safariClicked)}
       />
-        <mesh
+        {/* <mesh
         castShadow
         receiveShadow
         geometry={nodes.Text.geometry}
         material={materials['Material.001']}
         position={[-1.116, 0.27, 0]}
         rotation={[Math.PI / 2, 0, 1.577]}
-      />
+      /> */}
       <mesh
         ref={Text001Ref}
         castShadow
