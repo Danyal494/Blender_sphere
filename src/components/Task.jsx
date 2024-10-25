@@ -115,7 +115,7 @@ const Task = () => {
            // styles.borderRadius = "62px";
             break;
           case window.innerHeight <= 750:
-            styles.width = "290px";
+            styles.width = "299px";
            // styles.borderRadius = "62px";
             break;
           case window.innerHeight <= 775:
