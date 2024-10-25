@@ -215,18 +215,24 @@ const Task = () => {
         loading ? (<Loader/>) : (
           <Suspense fallback={<Loader/>}>
 
-          <Canvas  style={responsiveStyles}
-                  camera={{ position: [0, 0, 10], fov: 4 }}>
-                  <Environment preset="sunset"  background={false} /> 
-                     <color attach="background" args={["lightblue"]} />
-                    {/* <Bsphere/> */}
-                     {/* <ambientLight intensity={0.9}/> */}
-          <Sphere/>
-                     <OrbitControls 
-                     minDistance={10} maxDistance={14} 
-                     zoomSpeed={0.1}
-                     />
-                  </Canvas>
+         <Canvas
+  style={responsiveStyles}
+  camera={{
+    position: [0, 0, 6  ], // Adjusted camera position
+    fov: 3.4,  // Slightly wider field of view for better visibility
+    near: 0.1, // Adjust near clipping plane
+    far: 100 // Adjust far clipping plane
+  }}
+>
+  <Environment preset="lobby" background={false} />
+  <color attach="background" args={["lightblue"]} />
+  <Sphere />
+  <OrbitControls
+    minDistance={12}  // Adjusted minimum distance
+    maxDistance={15} // Adjusted maximum distance
+    zoomSpeed={0.1}
+  />
+</Canvas>
                      </Suspense>
         )
       }
